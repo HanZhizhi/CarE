@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_title_banner"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/fserve_top"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#55000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+        <TextView
+            android:id="@+id/main_banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="速车汇"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/main_banner_dotgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_title_service_repair"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/fserve_repair"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检修"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_title_service_maintain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/fserve_maintain"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保养"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_title_service_washing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/fserve_washing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="洗车"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_title_service_behalf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/fserve_behalf"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="代驾"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_title_service_decoration"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/fserve_decorate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车饰"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_title_service_beauty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/fserve_beauty"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美容"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_title_service_insurance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/fserve_insurance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保险"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_title_service_services"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/fserve_services"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="列表顶部" />
+
+</LinearLayout>

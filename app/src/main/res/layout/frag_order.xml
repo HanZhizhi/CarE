@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/forder_unloged_ralative_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/forder_center_line"
+                android:layout_marginBottom="60dp"
+                android:text="您还未登录！"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:alpha="0.87"/>
+
+            <TextView
+                android:id="@+id/forder_center_line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/forder_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/forder_center_line"
+                android:layout_marginTop="80dp"
+                android:text="登录"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/forder_loged_linearlayout"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+
+                <Button
+                    android:id="@+id/forder_top_unfinished"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:text="未完成"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#e53935"/>
+
+                <Button
+                    android:id="@+id/forder_top_finished"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:text="已完成"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+                <TextView
+                    android:id="@+id/forder_indicator_left"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="#e53935" />
+
+                <TextView
+                    android:id="@+id/forder_indicator_right"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="2dp"
+                    android:background="#e53935"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <ListView
+                        android:id="@+id/forder_unfinished_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/forder_finished_listview"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ListView>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/forder_image_pay"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@mipmap/forder_payment"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订单节目" />
+</LinearLayout>
