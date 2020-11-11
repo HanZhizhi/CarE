@@ -3,15 +3,14 @@ package com.space.care.activity;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
-import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
@@ -46,7 +45,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class LbsActivity extends AppCompatActivity implements LocationSource,AMapLocationListener,AMap.InfoWindowAdapter,AMap.OnMapClickListener,HttpListener{
+public class LbsActivity extends AppCompatActivity implements LocationSource, AMapLocationListener,AMap.InfoWindowAdapter,AMap.OnMapClickListener,HttpListener{
     class ObjProvider
     {
         public String pvdName,pvdIntroduction;
